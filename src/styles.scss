@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/cyan-orange.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  color: white;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: rgb(4, 4, 63);
+  margin: 2rem;
+  .search-bar {
+    width: 100%;
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 60%;
+      margin: 0 auto;
+      .search-input {
+        width: 86%;
+      }
+      button {
+        margin: auto 0;
+      }
+    }
+  }
+  .tabs {
+    margin: 2rem;
+    .list {
+      background-color: rgba(255, 255, 255, 0.142);
+      padding: 1rem;
+      h2 {
+        margin-top: 1rem;
+      }
+      .intro {
+        display: flex;
+        gap: 4rem;
+        .description {
+          
+            p {
+             margin: 6rem;
+            }
+        }
+
+        img {
+          max-width: 40vw;
+          height: 50vh;
+        }
+      }
+    }
+  }
+}
